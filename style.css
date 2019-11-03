@@ -6,11 +6,10 @@
 body {
     background-color: #2c2c2c;
     font-family: 'Roboto', sans-serif;
-    color: #DEDEDE;
 }
 
 .first_table {
-    width: 1000px;
+    width: 60vw;
     border: 2px solid #535353;
     border-radius: 5px;
     margin: 30px;
@@ -19,26 +18,58 @@ body {
 .box_name {
     width: 50%;
     display: inline-block;
+    color: #DEDEDE;
 }
 
 .box_date {
     display: inline-block;
-    width: 49%;
+    width: 45%;
+    color: #737373;
 }
-
 /* font weight ferst line in table */
 .weight {
     font-weight: 600;
+    color: white;
 }
 
 .line {
     border-top: 2px solid #535353;
 }
 
-.box_name>p {
-    padding: 15px 0px 15px 15px
+.box_name>p, .box_name>div>p {
+    padding: 15px 0px 15px 15px;
 }
 
 .line:first-of-type{
     border: none;
+}
+
+
+.triangle {
+    text-align: center;
+    border: 5px solid transparent;
+    border-top: 6px solid #fff;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 1%;
+}
+
+.three_dots {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0em;
+}
+
+.three_dots>a {
+    text-decoration: none;
+}
+
+.three_dots>a>span::before {
+    content: "\00B7 \00B7 \00B7";
+    color: white;
+}
+
+.box.data>p {
+    display: inline-block;
 }
