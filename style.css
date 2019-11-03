@@ -10,9 +10,9 @@ body {
 
 .first_table {
     width: 60vw;
-    border: 2px solid #535353;
+    border: 2px solid #555050;
     border-radius: 5px;
-    margin: 30px;
+    margin: 30px 0 0 30px;
 }
 
 .box_name {
@@ -66,6 +66,8 @@ body {
     background-position: center;
 }
 
+
+/* Зафиксировать при нажатии могу только с JS */
 .button_triangle:active {
     display: inline-block;
     width: 1rem;
@@ -82,9 +84,7 @@ body {
     font: inherit;
     color: inherit;
     background-color: transparent;
- 
     outline: none;
-
 }
 
 /* .triangle>img {
@@ -108,9 +108,153 @@ body {
 
 .three_dots>button>span::before {
     content: "\00B7 \00B7 \00B7";
-    color: white;
+    color: #737373;;
 }
 
 .box.data>p {
     display: inline-block;
+}
+
+/* Second table */
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px ;
+    /* border: 1px solid white; */
+    box-shadow: 0 0 0 2px #555050;
+    width: 60vw;
+    margin: 30px 0 0 30px;
+    color: white;
+}
+
+table tr th {
+    text-align: left;
+}
+
+table tr td button {
+    color: white;
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: transparent;
+}
+
+th {
+    width: 47%;
+    padding: 1em;
+}
+
+th>p {
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
+}
+
+td {
+    padding: 1em;
+    border-top: 2px solid #555050 ;
+}
+
+td:nth-child(1) {
+    color: #DEDEDE;
+}
+
+td:nth-child(2) {
+    color: #737373;
+}
+
+td:nth-child(3) {
+    width: 10%;
+
+}
+
+
+.open_lines {
+    display: inline-block;
+    width: 1.3rem;
+    filter: invert(1);
+    background-image: url(img/minus-button.png);
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.open_lines:active {
+    display: inline-block;
+    width: 1.3rem;
+    filter: invert(1);
+    background-image: url(img/add-square-button.png);
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.minus_plus {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+
+th>span:first-child {
+    padding-right: 0.9rem;
+}
+
+/* third table */
+
+.name_block{
+    width: 42%;
+}
+
+/* .data_block {
+    padding: 0;
+} */
+
+
+.line_data>td:last-child {
+    text-align: right;
+    width: 5%;
+}
+
+.box_search {
+    display: inline-block;
+    padding-left: ;
+}
+
+.box_search>form {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.box_search input, .box_search button {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #444444;
+}
+
+.box_search input {
+width: 50%;
+height: 42px;
+padding-left: 15px;
+}
+
+.box_search button {
+height: 42px;
+width: 42px;
+position: relative;
+top: 0;
+right: 0;
+cursor: pointer;
+}
+
+.box_search button::before {
+/* font-family: FontAwesome; */
+font-size: 16px;
+color: #F9F0DA;
 }
