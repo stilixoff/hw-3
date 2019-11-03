@@ -61,11 +61,15 @@ body {
     margin-right: 0em;
 }
 
-.three_dots>a {
-    text-decoration: none;
+.three_dots>button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }
 
-.three_dots>a>span::before {
+.three_dots>button>span::before {
     content: "\00B7 \00B7 \00B7";
     color: white;
 }
