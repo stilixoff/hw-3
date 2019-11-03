@@ -28,6 +28,7 @@ body {
 }
 /* font weight ferst line in table */
 .weight {
+    display: inline-block;
     font-weight: 600;
     color: white;
 }
@@ -45,7 +46,7 @@ body {
 }
 
 
-.triangle {
+/* .triangle {
     text-align: center;
     border: 5px solid transparent;
     border-top: 6px solid #fff;
@@ -53,6 +54,26 @@ body {
     width: 0;
     height: 0;
     margin-left: 1%;
+} */
+
+.button_triangle {
+    display: inline-block;
+}
+
+.triangle {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    filter: invert(1);
+    outline: none;
+    /* background-image: url(img/triangles.png); */
+}
+
+.triangle>img {
+    width: 70%;
+    height: 70%;
 }
 
 .three_dots {
