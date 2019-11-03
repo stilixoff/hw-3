@@ -58,6 +58,22 @@ body {
 
 .button_triangle {
     display: inline-block;
+    width: 1rem;
+    filter: invert(1);
+    background-image: url(img/sort-down.png);
+    background-size: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button_triangle:active {
+    display: inline-block;
+    width: 1rem;
+    filter: invert(1);
+    background-image: url(img/caret-arrow-up.png);
+    background-size: 0.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .triangle {
@@ -66,15 +82,15 @@ body {
     font: inherit;
     color: inherit;
     background-color: transparent;
-    filter: invert(1);
+ 
     outline: none;
-    /* background-image: url(img/triangles.png); */
+
 }
 
-.triangle>img {
+/* .triangle>img {
     width: 70%;
     height: 70%;
-}
+} */
 
 .three_dots {
     display: inline-block;
