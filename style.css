@@ -220,6 +220,8 @@ th>span:first-child {
     background: #444444;
     border-radius: 5px;
     margin-left: 9em;
+    position: relative;
+    float: right;
 }
 
 .box_search>form {
@@ -269,3 +271,6 @@ span {
     padding-right: 0.6em;
 }
 
+.search_block>p {
+    padding-top: 0.7em;
+}
