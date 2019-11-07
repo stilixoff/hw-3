@@ -202,9 +202,7 @@ th>span:first-child {
     width: 42%;
 }
 
-/* .data_block {
-    padding: 0;
-} */
+
 
 .third_table th {
     padding: 5px 5px 5px 15px;
@@ -219,9 +217,14 @@ th>span:first-child {
     display: inline-block;
     background: #444444;
     border-radius: 5px;
-    margin-left: 9em;
     position: relative;
     float: right;
+}
+
+.search_block>p {
+    padding-top: 0.7em;
+    position: relative;
+    vertical-align: middle;
 }
 
 .box_search>form {
@@ -239,19 +242,11 @@ th>span:first-child {
 }
 
 .box_search input {
-    width: 80%;
+    width: 76%;
     height: 42px;
     padding-left: 9px;
 }
 
-/* .box_search button {
-    height: 42px;
-    width: 42px;
-    position: relative;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-} */
 .box_search button::before {
     content: "\f002";
     font-family: FontAwesome;
@@ -269,10 +264,6 @@ th>span:first-child {
 
 span {
     padding-right: 0.6em;
-}
-
-.search_block>p {
-    padding-top: 0.7em;
 }
 
 
